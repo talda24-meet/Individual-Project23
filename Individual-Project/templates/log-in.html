@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+</head>
+<body class="main">
+
+    <div class="header">
+        <img src="{{url_for('static',filename='./FCB.png')}}" class="titleImage"/>
+        <h1 class="barca">BARCA</h1>
+        <h1 class="gram">gram</h1>
+    </div>
+
+    <div>
+
+        <form method="post" action="/">
+            <h4>
+                Log in to your account
+            </h4>
+
+            <div>
+                <label>Email address*</label>
+                <div>
+                    <input type="email"  name="email">
+                </div>
+            </div>
+
+            <div>
+                <label>Password*</label>
+                <div class>
+                    <input type="password"  name="password" minlength="6">
+                </div>
+            </div>
+
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+
+        <a href="/signup">Dont have an account? Sign up here</a>
+        <a href="/signout">Sign out of your account</a>
+
+    </div>
+</body>
+</html>

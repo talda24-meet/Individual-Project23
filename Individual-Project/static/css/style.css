@@ -1,0 +1,44 @@
+.barca {
+	color: darkblue;
+	font-family: sans-serif;
+	font-size: 40px;
+	display: inline;
+	margin-top: 20px;
+}
+
+.gram {
+	color: maroon;
+	background-color:darkblue;
+	font-family: sans-serif;
+	font-size: 40px;
+	display: inline;
+	margin-top: 20px;
+}
+
+.titleImage {
+	width: 70px;
+	height: 70px;
+	display: inline;
+}
+
+.header {
+	background-color: maroon;
+}
+
+.main {
+	background-image: url('/static/campNou.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.links {
+	color: whitesmoke;
+	background-color:darkblue;
+	font-family: sans-serif;
+	font-size: 30px;
+	display: inline;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+</head>
+<body class="main">
+
+    <div class="header">
+        <img src="{{url_for('static',filename='./FCB.png')}}" class="titleImage"/>
+        <h1 class="barca">BARCA</h1>
+        <h1 class="gram">gram</h1>
+        <a href="/home" class="links">Home page</a>
+        <a href="/profile" class="links">Profile page</a>
+    </div>
+
+    <div>
+        {% for post in posts %}
+        {{posts[post]['title']}}
+        {{posts[post][<img src="{{url_for('static',filename='image')}}" class="titleImage"/>]}}
+        {{posts[post]['username']}}
+        {% endfor %}
+    </div>
+</body>
+</html>

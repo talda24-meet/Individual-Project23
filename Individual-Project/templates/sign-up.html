@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+</head>
+<body class="main">
+
+    <div class="header">
+        <img src="{{url_for('static',filename='./FCB.png')}}" class="titleImage"/>
+        <h1 class="barca">BARCA</h1>
+        <h1 class="gram">gram</h1>
+    </div>
+
+    <div>
+
+        <form method="post" action="/signup">
+            <h4>
+                Create an account
+            </h4>
+
+            <div>
+                <label>Username*</label>
+                <div>
+                    <input type="text"  name="username">
+                </div>
+            </div>
+
+            <div>
+                <label>Email address*</label>
+                <div>
+                    <input type="email"  name="email">
+                </div>
+            </div>
+            
+            <div>
+                <label>Bio*</label>
+                <div>
+                    <input type="text"  name="bio">
+                </div>
+            </div>
+
+            <div>
+                <label>Password*</label>
+                <div>
+                    <input type="password"  name="password" minlength="6">
+                </div>
+            </div>
+
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+
+        <a href="/">Already have an account? Log In here</a>
+
+    </div>
+</body>
+</html>
