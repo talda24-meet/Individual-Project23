@@ -13,12 +13,17 @@
         <h1 class="gram">gram</h1>
         <a href="/home" class="links">Home page</a>
         <a href="/profile" class="links">Profile page</a>
+        <a href="/signup" class="links">Sign up</a>
+        <a href="/" class="links">Log in</a>
     </div>
 
-    <div>
-        {% for i in info %}
-        {{info[i]}}
-        {% endfor %}
+    <div class="post-content">
+        <div class="post-container">
+            {% for i in info %}
+            <h2 class="postText">{{info[i]}}</h2>
+            <br>
+            {% endfor %}
+        </div>
     </div>
 
     <div>

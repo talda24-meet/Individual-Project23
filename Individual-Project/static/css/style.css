@@ -42,3 +42,114 @@
 	margin-top: 20px;
 	margin-right: 20px;
 }
+
+
+.post-content {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-container {
+  margin-bottom: 20px; 
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.postText {
+  color: navy;
+}
+
+.postImage {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Add some spacing between form elements */
+form div {
+  margin-bottom: 15px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.login-button:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}

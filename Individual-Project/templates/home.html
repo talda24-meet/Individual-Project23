@@ -13,13 +13,17 @@
         <h1 class="gram">gram</h1>
         <a href="/home" class="links">Home page</a>
         <a href="/profile" class="links">Profile page</a>
+        <a href="/signup" class="links">Sign up</a>
+        <a href="/" class="links">Log in</a>
     </div>
 
-    <div>
+    <div class="post-content">
         {% for post in posts %}
-        {{posts[post]['title']}}
-        {{posts[post][<img src="{{url_for('static',filename='image')}}" class="titleImage"/>]}}
-        {{posts[post]['username']}}
+        <div class="post-container">
+            <h2 class="postText">{{posts[post]['title']}}</h2>
+            <img src="{{posts[post]['image']}}" class="postImage"/>
+            <h4 class="postText">{{posts[post]['username']}}</h4>
+        </div>
         {% endfor %}
     </div>
 </body>
